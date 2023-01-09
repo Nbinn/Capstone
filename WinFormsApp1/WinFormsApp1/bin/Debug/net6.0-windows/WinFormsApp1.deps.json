@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WinFormsApp1/1.0.0": {
+        "dependencies": {
+          "vxlapi_NET": "11.0.14.22309"
+        },
+        "runtime": {
+          "WinFormsApp1.dll": {}
+        }
+      },
+      "vxlapi_NET/11.0.14.22309": {
+        "runtime": {
+          "vxlapi_NET.dll": {
+            "assemblyVersion": "11.0.14.22309",
+            "fileVersion": "11.0.14.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WinFormsApp1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "vxlapi_NET/11.0.14.22309": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
