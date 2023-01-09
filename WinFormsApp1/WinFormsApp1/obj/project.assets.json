@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tho Nhan\\Desktop\\capstone\\New folder\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
-      "projectName": "WinFormsApp1",
-      "projectPath": "C:\\Users\\Tho Nhan\\Desktop\\capstone\\New folder\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Tho Nhan\\Desktop\\capstone\\New folder\\WinFormsApp1\\WinFormsApp1\\DemoTransmit.csproj",
+      "projectName": "DemoTransmit",
+      "projectPath": "C:\\Users\\Tho Nhan\\Desktop\\capstone\\New folder\\WinFormsApp1\\WinFormsApp1\\DemoTransmit.csproj",
       "packagesPath": "C:\\Users\\Tho Nhan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Tho Nhan\\Desktop\\capstone\\New folder\\WinFormsApp1\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",

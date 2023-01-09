@@ -93,16 +93,8 @@ namespace WinFormsApp1
                 dataGridView1.Rows[index++].Cells["IndexColumn"].Value = index;
                 
                 dataGridView1.Rows[index].Cells["TimeStampColumn"].Value = BusMngr.*/
-                if(BusMngr.Instance.Init() == true)
-                {
-                    dataGridView1.Rows[index].Cells["IDColumn"].Value = "true";
 
-                }
-                else
-                {
-                    dataGridView1.Rows[index].Cells["DataColumn"].Value = "false";
-                }
-                /*if (BusMngr.Instance.TransmitData(messageID1.Text,messageData1.Text) == true) 
+                /*if (BusMngr.Instance.Init() == true)
                 {
 
                     dataGridView1.Rows[index].Cells["IDColumn"].Value = "true";
@@ -112,6 +104,17 @@ namespace WinFormsApp1
                 {
                     dataGridView1.Rows[index].Cells["DataColumn"].Value = "false";
                 }*/
+
+                if(BusMngr.Instance.TransmitData(messageID1.Text,messageData1.Text) == true) 
+                {
+
+                    dataGridView1.Rows[index].Cells["IDColumn"].Value = "true";
+
+                }
+                else
+                {
+                    dataGridView1.Rows[index].Cells["DataColumn"].Value = "false";
+                }
             }
         }
 

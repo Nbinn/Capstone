@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
+
 namespace WinFormsApp1
 {
     class BusMngr : BaseMngr, DriverListener
@@ -45,7 +45,7 @@ namespace WinFormsApp1
         public override bool Init()
         {
             driver = new Driver(this);
-            if (driver.Init("WinFormsApp1", "CAN", "Virtual", 0) == false)
+            if (driver.Init("DemoTransmit", "CAN", "Virtual", 0) == false)
             {
                 lastError = "Initialize driver failed";
                 return false;
@@ -174,7 +174,6 @@ namespace WinFormsApp1
             if (driver.Transmit(Convert.ToUInt32(id), (ushort)dlc, data.ToArray()) == false)
             {
                 lastError = "Transmit data failed. ID: 0x" + Convert.ToInt64(id).ToString("X");
-                Console.WriteLine(lastError);
                 return false;
             }
 

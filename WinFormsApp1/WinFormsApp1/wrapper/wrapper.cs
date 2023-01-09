@@ -78,13 +78,13 @@ namespace VXL
             }
             if (OpenDriver() == false)
             {
-                return true;
+                return false;
             }
             if (GetDriverConfig() == false)
             {
                 return false;
             }
-            /*if (GetAppConfig(appChannel) == false)
+            if (GetAppConfig(appChannel) == false)
             {
                 return false;
             }
@@ -95,7 +95,7 @@ namespace VXL
             if (InitThread() == false)
             {
                 return false;
-            }*/
+            }
 
             return true;
         }
@@ -198,7 +198,7 @@ namespace VXL
                         status = driver.XL_CanTransmit(portHandle, accessMask, xlEvent);
                         if (status != XLDefine.XL_Status.XL_SUCCESS)
                         {
-                            return false;
+                            return true;
                         }
                         break;
                     default:
